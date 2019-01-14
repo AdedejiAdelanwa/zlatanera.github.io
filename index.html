@@ -10,42 +10,74 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-  <header>
-      <nav class="navbar">
-         <a href="#" class="brand">
-             <div class="logo">
-                <img src="images/logo.png">
-                <img src="images/logo-btm.png">
-             </div> Zlatanera
-         </a>
-
-         <ul class="nav-links">
-             <li><a href="#">home</a></li>
-             <li><a href="#">food</a></li>
-             <li><a href="#">parks</a></li>
-             <li><a href="#">mountains</a></li>
-             <li><a href="#">nightlife</a></li>
-         </ul>
-
-         <div class="social">
-                <a href="#"><i class="fab fa-twitter social-link" title="@zlatanera_tours"></i></a>
-                <a href="#"><i class="fab fa-facebook-f social-link" title="Zlatanera Tours"></i></a>
-                <a href="#"><i class="fab fa-instagram social-link" title="@zlatanera_tours"></i></a>
+      <header class="header">
+        <nav class="navbar" id="myTopnav">
+            <a href="#" class="brand">
+                <div class="logo">
+                   <img src="images/logo.png">
+                   <img src="images/logo-btm.png">
+                </div> Zlatanera
+            </a>
+   
+            <ul class="nav-links">
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">food</a></li>
+                <li><a href="#">parks</a></li>
+                <li><a href="#">mountains</a></li>
+                <li><a href="#">nightlife</a></li>
+            </ul>
+   
+            <div class="social">
+                   <a href="#"><i class="fab fa-twitter social-link" title="@zlatanera_tours"></i></a>
+                   <a href="#"><i class="fab fa-facebook-f social-link" title="Zlatanera Tours"></i></a>
+                   <a href="#"><i class="fab fa-instagram social-link" title="@zlatanera_tours"></i></a>
+            </div>
+            <a href="javascript:void(0);" class="toggleIcon" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+         <div class="header-message">
+             <div>
+                <p>Don’t Quack Like a Duck<br> Soar Like an Eagle</p>
+                <button class="read-article">Read Article <i class="fas fa-arrow-right"></i></button>
+             </div>
+   
+             <ul>
+                 <li><a href="#">The City of a Thousand Hills</a></li>
+                 <li><a href="#">Kaduna my Favourite City</a></li>
+                 <li><a href="#">The East Africa Paradise</a></li>
+             </ul>
          </div>
-         
-      </nav>
-      <div class="header-message">
-          <div>
-             <p>Don’t Quack Like a Duck<br> Soar Like an Eagle</p>
-             <button class="read-article">Read Article <i class="fas fa-arrow-right"></i></button>
+      </header>
+      <main class="content">CONTENT
+          <div class="upper-grid">
+             <div class="info-tile">one</div>
+             <div class="info-tile">two</div>
+             <div class="info-tile">three</div>
+             <div class="info-tile">four</div>
+             <div class="info-tile">five</div>
+             <div class="info-tile">six</div> 
           </div>
 
-          <ul>
-              <li><a href="#">The City of a Thousand Hills</a></li>
-              <li><a href="#">Kaduna my Favourite City</a></li>
-              <li><a href="#">The East Africa Paradise</a></li>
-          </ul>
-      </div>
-  </header>  
+          <div class="lower-grid">
+            <div class="info-tile">one</div>
+            <div class="info-tile">two</div>
+            <div class="info-tile">three</div>
+            <div class="info-tile">four</div>
+            <div class="info-tile">five</div>
+            <div class="info-tile">six</div>
+          </div>
+      </main>
+      <footer class="footer">FOOTER</footer>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
 </body>
 </html>

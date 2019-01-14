@@ -4,10 +4,21 @@ html, body {
     height: 100%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #fff;
 }
-body {
-    position: relative;
+
+.header {
+    background-color: #0ba79a;
 }
+
+.content{
+    background-color: #ff6347;
+}
+.footer {
+    background-color: #272727;
+}
+
  header {
      position: relative;
      width: 100%;
@@ -66,7 +77,7 @@ body {
 .nav-links > li {
     text-align: center;
 }
-.nav-links > li:hover {
+.nav-links > li.active {
     border-bottom: 2px solid #fff;
 }
 .social {
@@ -79,6 +90,9 @@ body {
 .navbar .social-link:hover {
     font-size: 2em;
 }
+.navbar .toggleIcon {
+    display: none;
+  }
 
  header .header-message {
     position: absolute;
@@ -124,4 +138,63 @@ header .header-message  p {
 
 .header-message a:hover {
     font-size: 1rem;
+} 
+ @media screen and (max-width: 768px) {
+     .navbar {
+         justify-content: space-around;
+     }
+     .social {
+         display: none;
+     }
+     .navbar .nav-links li {
+        padding: 0 5px;
+     }
+ }
+ @media screen and (max-width: 600px) {
+    .navbar a:not(.brand) {display: none;}
+    .logo {padding-right: 5px;}
+     .navbar a.toggleIcon {
+      float: right;
+      display: block;
+      font-size: 1rem;
+    } 
 }
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .toggleIcon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .nav-links > li.active {
+        border-bottom: none;
+    }
+
+    .navbar .nav-links {
+            display: block;
+            width: 20%;
+    }
+    .brand {
+        display: flex;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    header .header-message {
+        display: block;
+        align-items: center;
+    }
+    .header-message li {
+        text-align: left;
+        line-height: 1rem;
+        padding-top: 0px;
+    }
+    .logo {
+        padding-right: 10px;
+    }
+  }
