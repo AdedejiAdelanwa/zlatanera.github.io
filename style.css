@@ -243,7 +243,7 @@ Lower Grid Section */
 
 .footer {
     position: absolute;
-    top: 2000px;
+    top: 1950px;
     display: flex;
     width: 90%;
     height: 40px;
@@ -273,10 +273,10 @@ Lower Grid Section */
         top: 2400px;
         
     }
+    
     .footer {
-        top: 2950px;
-       
-    } 
+        top: 2930px;
+    }
 }
 
  @media screen and (max-width: 768px) {
