@@ -228,24 +228,58 @@ Lower Grid Section */
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
     grid-auto-rows: 150px;
-    color: black;
+    color: #6D6363;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .lower-tile {
     display: flex;
+    align-items: flex-start;
+}
+.lower-tile > p {
+    padding: 0px 10px;
+}
+
+.footer {
+    position: absolute;
+    top: 2000px;
+    display: flex;
+    width: 90%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer i {
+    display: block;
+}
+
+.footer > a {
+    color: #6D6363;
+    padding-right: 15px;
+    text-decoration: none;
 }
 
 
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
     .upper-grid {
         position: absolute;
-        top: -10px;
+        top: -10px; 
+    }
+    .lower-grid {
+        position: absolute;
+        top: 2400px;
         
-    }  
+    }
+    .footer {
+        top: 2950px;
+       
+    } 
 }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 768px) {
     .navbar a:not(.brand) {display: none;}
     .logo {padding-right: 5px;}
      .navbar a.toggleIcon {
@@ -253,13 +287,13 @@ Lower Grid Section */
       display: block;
       font-size: 1rem;
     }
-    
+     
 }
 
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive .toggleIcon {
       position: absolute;
@@ -282,6 +316,22 @@ Lower Grid Section */
     .brand {
         display: flex;
     }
+    .lower-grid {
+        position: absolute;
+        top: 4700px;
+        
+    }
+    .footer {
+        top: 5200px;
+       
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer {
+        top: 5700px;
+       
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -302,5 +352,15 @@ Lower Grid Section */
         line-height: 1rem;
         padding-top: 0px;
     }
-    
+
+    .lower-grid {
+        position: absolute;
+        top: 4750px;
+        
+    }
+    .footer {
+        top: 5750px;
+       
+    }
+
   }
